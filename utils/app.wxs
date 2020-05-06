@@ -1,0 +1,15 @@
+var numFixed = ((function(num) {
+    if (isNaN(num)) {
+        return (0)
+    };
+    num = parseFloat(num);
+    var num = num.toFixed(2);
+    var numarr = num.split(".");
+    if (numarr.length > 1 && numarr[((nt_0 = ((1)), null == nt_0 ? undefined : 'number' === typeof nt_0 ? nt_0 : "" + nt_0))] == "00") {
+        num = numarr[((nt_1 = ((0)), null == nt_1 ? undefined : 'number' === typeof nt_1 ? nt_1 : "" + nt_1))]
+    };
+    return (num)
+}));
+module.exports = (({
+    numFixed: numFixed,
+}));

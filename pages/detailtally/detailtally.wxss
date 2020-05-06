@@ -1,0 +1,105 @@
+.one {
+  padding: 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3eb575;
+  height: 240rpx;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.sort_icon {
+  margin-bottom: 22rpx;
+}
+
+.icon_font {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 45rpx;
+  position: relative;
+  font-family: "iconfont" !important;
+  font-size: 60rpx;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+}
+
+.sort_name {
+  width: 110rpx;
+  height: 110rpx;
+  color: black;
+  text-align: center;
+}
+
+.main {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx 0 20rpx;
+}
+
+.item-common {
+  min-height: 110rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10rpx 0 10rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.item-common-f {
+  color: #969696;
+  font-size: 26rpx;
+  min-width: 80rpx;
+}
+
+.footer {
+  height: 90rpx;
+  border-top: #cbcbcb solid 1rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 0;
+  left: 0;
+  background-size: cover;
+  z-index: 999;
+}
+
+.foot-item {
+  flex: 1;
+  text-align: center;
+  color: #343233;
+  font-size: 26rpx;
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.footer .menuon {
+  background-color: #f2f2f2;
+}
+
+.foot-item-txt {
+  width: 100%;
+  border-right: #cbcbcb solid 1rpx;
+}

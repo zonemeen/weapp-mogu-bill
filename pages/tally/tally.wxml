@@ -1,0 +1,53 @@
+<view>
+    <view class="one">
+        <view class="date">
+            <view class="date-year">{{year}}年</view>
+            <picker bindchange="onDateChange" end="{{maxDate}}" fields="month" mode="date" start="2000-01-01">
+                <view class="date-month">
+                    {{month}}月
+                    <text class="icon-font-xiala icon-xiala" style=""></text>
+                </view>
+            </picker>
+        </view>
+        <view class="outcome">
+            <view class="outcome-name">支出</view>
+            <view class="outcome-num">{{outcometotal}}</view>
+        </view>
+        <view class="income">
+            <view class="income-name">收入</view>
+            <view class="income-num">{{incometotal}}</view>
+        </view>
+    </view>
+    <view class="two">
+        <view wx:for="{{tallylist}}" wx:for-item="month_data" wx:key="{{index}}">
+            <view class="tallymain">
+                <view class="tallymain-date">{{month_data.title}}</view>
+                <view class="tallymain-num">支:{{month_data.outcome}} 收:{{month_data.income}}</view>
+            </view>
+            <view bindtouchmove="touchmove" bindtouchstart="touchstart" class="touch-item {{touchIndexData[month_data_item.touchindex]?'touch-move-active':''}}" data-index="{{month_data_item.touchindex}}" wx:for="{{month_data.data}}" wx:for-item="month_data_item">
+                <view bindtap="showDetail" class="content" data-index="{{month_data_item.touchindex}}">
+                    <view class="detail" data-index="{{month_data_item.touchindex}}" wx:if="{{month_data_item.comeType==0}}">
+                        <view class="sortindex">
+                            <span class="sortindex-icon iconfont1 {{outcomesort[month_data_item.sortindex].icon}}"></span>
+                        </view>
+                        <view class="remark">
+                            {{month_data_item.remark===''?outcomesort[month_data_item.sortindex].text:month_data_item.remark}}
+                        </view>
+                        <view class="num">-{{month_data_item.num}}</view>
+                    </view>
+                    <view class="detail" data-index="{{month_data_item.touchindex}}" wx:else>
+                        <view class="sortindex">
+                            <span class="sortindex-icon iconfont1 {{incomesort[month_data_item.sortindex].icon}}"></span>
+                        </view>
+                        <view class="remark">
+                            {{month_data_item.remark===''?incomesort[month_data_item.sortindex].text:month_data_item.remark}}
+                        </view>
+                        <view class="num">{{month_data_item.num}}</view>
+                    </view>
+                </view>
+                <view catchtap="del" class="del" data-index="{{month_data_item.index}}">删除</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view animation="{{animationData}}" bindtap="addtally" class="addtally">记账</view>

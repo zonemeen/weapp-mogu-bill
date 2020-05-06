@@ -1,0 +1,33 @@
+<view>
+    <view class="summary">
+        <image class="avatar" src="{{icon}}"></image>
+        <view class="user">记账小管家</view>
+        <view class="doc">每天记录生活点滴，让每一分钱都花得明白。</view>
+    </view>
+    <view class="menu">
+        <view class="menuItem" style="padding: 10rpx 0;">
+            <image src="/static/images/share.png" style="width: 30px; height: 30px; padding-top:5px;"></image>
+            <view class="shareFriend">
+                <button id="share" openType="share" size="mini" type="default">分享好友</button>
+            </view>
+        </view>
+        <view class="menuItem" style="padding: 10rpx 0;">
+            <image src="/static/images/feedback.png" style="width: 30px; height: 30px; padding-top:5px;"></image>
+            <view class="shareFriend">
+                <button id="share" openType="feedback" size="mini" type="default">反馈问题</button>
+            </view>
+        </view>
+        <view class="menuItem" style="padding: 10rpx 0;">
+            <image src="/static/images/dianzan.png" style="width: 30px; height: 30px; padding-top:5px;"></image>
+            <view bindtap="previewImage" class="shareFriend">
+                <button id="share" size="mini" type="default">打赏支持</button>
+            </view>
+        </view>
+        <view class="menuItem" style="padding: 10rpx 0;">
+            <image src="/static/images/kefu.png" style="width: 30px; height: 30px; padding-top:5px;"></image>
+            <view class="shareFriend">
+                <button id="share" openType="contact" size="mini" type="default">联系客服</button>
+            </view>
+        </view>
+    </view>
+</view>

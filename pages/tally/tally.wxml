@@ -49,5 +49,9 @@
             </view>
         </view>
     </view>
+    <view wx:if="{{outcometotal==0&&incometotal==0}}" class="none">
+      <image src="/static/images/feedback.png" style="width: 22px; height: 22px;"></image>
+      暂无记录，快去记一笔吧~
+    </view>
 </view>
 <view animation="{{animationData}}" bindtap="addtally" class="addtally">记账</view>

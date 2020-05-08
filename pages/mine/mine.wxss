@@ -9,7 +9,8 @@
 .summary .avatar {
   width: 160rpx;
   height: 160rpx;
-  margin: 30rpx;
+  border-radius: 50%;
+  margin: 40rpx 0 25rpx;
   display: flex;
   align-items: center;
   justify-content: center;

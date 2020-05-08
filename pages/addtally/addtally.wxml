@@ -34,8 +34,8 @@
             <view class="panel-display">{{calc.displayNum||0}}</view>
         </view>
         <view class="remark">
-            <view class="textdesc">备注:</view>
-            <input adjustPosition="true" bindinput="setRemark" class="textinput" id="title" maxlength="20" placeholder="请填写备注" value="{{initTitleValue}}"></input>
+            <view class="textdesc">项目:</view>
+            <input adjustPosition="true" bindinput="setRemark" class="textinput" id="title" maxlength="20" placeholder="选择填写具体项目" value="{{initTitleValue}}"></input>
         </view>
         <view class="panel-btns">
             <view class="btns-rows">

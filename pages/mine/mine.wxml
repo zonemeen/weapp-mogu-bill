@@ -1,7 +1,12 @@
 <view>
     <view class="summary">
-        <image class="avatar" src="{{icon}}"></image>
-        <view class="user">记账小管家</view>
+        <view wx:if="{{!openid}}" style="margin: 70px 20px 20px">
+            <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">登录</button>
+        </view>
+        <view class="uploader-container" wx:if="{{openid}}">
+            <image class="avatar" src="{{userinfo.avatarUrl}}"></image>
+            <view class="user">{{userinfo.nickName}}</view>
+        </view>
         <view class="doc">每天记录生活点滴，让每一分钱都花得明白。</view>
     </view>
     <view class="menu">

@@ -14,39 +14,27 @@
   background: #3eb575;
 }
 
-.tallytitle {
-  width: 100%;
+.pickerdate {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 5rpx;
-  padding-bottom: 5rpx;
 }
 
-.outcometitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40rpx;
+.selectpickerdate {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
   font-size: 30rpx;
-  letter-spacing: 2rpx;
-  border: 1rpx solid black;
-  border-radius: 8rpx 0 0 8rpx;
-  width: 150rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  width: 200rpx;
 }
 
-.incometitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40rpx;
-  font-size: 30rpx;
-  letter-spacing: 2rpx;
-  border: 1rpx solid black;
-  border-radius: 0 8rpx 8rpx 0;
-  border-left: none;
-  width: 150rpx;
+.icon-font-xiala {
+  font-family: "iconfont";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24rpx;
 }
 
 .two {
@@ -58,6 +46,8 @@
 
 .selectpart {
   display: flex;
+  position: fixed;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -94,27 +84,39 @@
   width: 100rpx;
 }
 
-.pickerdate {
+.tallytitle {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
 }
 
-.selectpickerdate {
-  padding-left: 10rpx;
-  padding-right: 10rpx;
-  font-size: 30rpx;
+.outcometitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40rpx;
-  line-height: 40rpx;
-  text-align: center;
-  width: 200rpx;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  border: 1rpx solid black;
+  border-radius: 8rpx 0 0 8rpx;
+  width: 150rpx;
 }
 
-.icon-font-xiala {
-  font-family: "iconfont";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24rpx;
+.incometitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rpx;
+  font-size: 30rpx;
+  letter-spacing: 2rpx;
+  border: 1rpx solid black;
+  border-radius: 0 8rpx 8rpx 0;
+  border-left: none;
+  width: 150rpx;
 }
 
 .budgetpart {
@@ -124,6 +126,7 @@
   height: 100rpx;
   box-sizing: border-box;
   border-bottom: 1rpx solid #ccc;
+  margin-top: 110rpx;
 }
 
 .outlay {

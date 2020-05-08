@@ -1,32 +1,23 @@
 <view>
     <view class="one">
         <view class="pickerdate">
-            <picker bindchange="onDateChange" end="{{maxDate}}" fields="{{pickerfields}}" mode="date" start="2000-01">
-                <view class="selectpickerdate">
-                    {{date}}
-                    <text class="icon-font-xiala icon-xiala" style=""></text>
-                </view>
-            </picker>
-        </view>
+                <picker bindchange="onDateChange" end="{{maxDate}}" fields="{{pickerfields}}" mode="date" start="2000-01">
+                    <view class="selectpickerdate">{{date}}<text class="icon-font-xiala icon-xiala" style=""></text>
+                    </view>
+                </picker>
+            </view>
     </view>
     <view class="two">
         <view class="selectpart">
             <view class="selectdate">
-                <view bindtap="selectDate" class="selectmonth" id="0" style="background-color:{{selectDate==0?'#343233':'#3eb575'}};color:{{selectDate==0?'#3eb575':'#000000'}}">
-                    月
-                </view>
-                <view bindtap="selectDate" class="selectyear" id="1" style="background-color:{{selectDate==1?'#343233':'#3eb575'}};color:{{selectDate==1?'#3eb575':'#000000'}}">
-                    年
-                </view>
+                <view bindtap="selectDate" class="selectmonth" id="0" style="background-color:{{selectDate==0?'#343233':'#3eb575'}};color:{{selectDate==0?'#3eb575':'#000000'}}">月</view>
+                <view bindtap="selectDate" class="selectyear" id="1" style="background-color:{{selectDate==1?'#343233':'#3eb575'}};color:{{selectDate==1?'#3eb575':'#000000'}}">年</view>
             </view>
             <view class="tallytitle">
-                <view bindtap="selectTap" class="outcometitle" id="0" style="background-color:{{curSelect==0?'#343233':'#3eb575'}};color:{{curSelect==0?'#3eb575':'#000000'}}">
-                    支出
-                </view>
-                <view bindtap="selectTap" class="incometitle" id="1" style="background-color:{{curSelect==1?'#343233':'#3eb575'}};color:{{curSelect==1?'#3eb575':'#000000'}}">
-                    收入
-                </view>
-            </view>
+            <view bindtap="selectTap" class="outcometitle" id="0" style="background-color:{{curSelect==0?'#343233':'#3eb575'}};color:{{curSelect==0?'#3eb575':'#000000'}}">支出</view>
+            <view bindtap="selectTap" class="incometitle" id="1" style="background-color:{{curSelect==1?'#343233':'#3eb575'}};color:{{curSelect==1?'#3eb575':'#000000'}}">收入</view>
+        </view>
+            
         </view>
         <view class="budgetpart">
             <view class="outlay">{{totalText}}</view>
@@ -44,14 +35,12 @@
                 <view class="rank-item-detail">
                     <view class="item-detail-info">
                         <view>
-                            <text class="item-detail-info-txt">
-                                {{curSelect==0?outcomesort[item.sortindex].text:incomesort[item.sortindex].text}}
-                            </text>
-                            <text class="txt-pct">
-                                {{commonFunc.numFixed(item.num/totalNum*100)}}%
-                            </text>
+                            <text class="item-detail-info-txt">{{curSelect==0?outcomesort[item.sortindex].text:incomesort[item.sortindex].text}}</text>
+                            <text class="txt-pct">{{commonFunc.numFixed(item.num/totalNum*100)}}%</text>
                         </view>
-                        <view class="item-detail-info-txt">{{item.num}}</view>
+                        <view class="item-detail-info-txt">
+                              {{item.num}}
+                  </view>
                     </view>
                     <view class="item-detail-progress">
                         <view class="progress" style="width:{{commonFunc.numFixed(item.num/totalNum*100)}}%"></view>

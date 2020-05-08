@@ -2,6 +2,10 @@ require("utils/util.js");
 
 App({
   onLaunch: function () {
+    wx.cloud.init({
+      env: "test-juvis",
+      traceUser: true,
+    });
     this.getSystemInfo();
   },
   getSystemInfo: function () {

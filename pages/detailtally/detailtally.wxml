@@ -19,7 +19,7 @@
             <view>{{date}}</view>
         </view>
         <view class="item-common">
-            <view class="item-common-f">备注</view>
+            <view class="item-common-f">项目</view>
             <view>{{detail.remark}}</view>
         </view>
     </view>

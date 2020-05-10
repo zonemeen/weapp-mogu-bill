@@ -37,11 +37,15 @@ Page({
       title: "提示",
       content: "确认删除这条记账？",
       success: function (e) {
-        t.deleteTallyByIndex(i),
-          n.sendEvent("change"),
-          wx.navigateBack({
-            delta: 1,
-          });
+        if (e.confirm) {
+          t.deleteTallyByIndex(i),
+            n.sendEvent("change"),
+            wx.navigateBack({
+              delta: 1,
+            });
+        } else if (e.cancel) {
+          console.log("取消");
+        }
       },
     });
   },

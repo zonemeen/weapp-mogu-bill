@@ -20,7 +20,7 @@
     "list": [
       {
         "pagePath": "pages/tally/tally",
-        "text": "账单",
+        "text": "明细",
         "iconPath": "static/images/tally.png",
         "selectedIconPath": "static/images/tally-active.png"
       },

@@ -32,7 +32,7 @@
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "关于",
+        "text": "我的",
         "iconPath": "static/images/mine.png",
         "selectedIconPath": "static/images/mine-active.png"
       }

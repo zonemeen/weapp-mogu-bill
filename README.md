@@ -8,9 +8,8 @@
 
 ## 扫描预览
 
-<p align="center">
-    <img src="https://miqilin-blog.oss-cn-shenzhen.aliyuncs.com/mogu.jpg" alt="蘑菇记账小程序码">
-</p>
+![蘑菇记账小程序码](https://miqilin-blog.oss-cn-shenzhen.aliyuncs.com/mogu.jpg)
+
 
 ## 使用步骤
 
